@@ -1,0 +1,35 @@
+# Hey this is a Yaml
+my-course: "AWS DevOps Progession Certification"
+version: 1.0
+price: 299
+is_public: true
+release_date: 2022-01-10
+pre_enroll: null
+category:
+ - AWS
+ - DevOps
+ - AWS Certification
+
+course_dev: ["murthy", "kavya", "nirnay"]
+dev_details:
+ - name: "murthy"
+   email: "support@manifoldailearning.in"
+   role: "author"
+ - name: "kavya"
+   email: "support@manifoldailearning.in"
+   role: "Co-author"
+ - name: "nirnay"
+   email: "support@manifoldailearning.in"
+   role: "Editor"
+ - {name: "navishka", email: "upport@manifoldailearning.in", role: "Finance"}
+
+short_desciption: >
+ This is a course for
+ AWS DevOps Professional
+ Certification
+
+detailed_description: |
+ This course has been
+ created with the colaboration
+ with industry experts.
+ We hope you like it.
