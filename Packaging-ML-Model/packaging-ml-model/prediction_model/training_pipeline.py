@@ -11,14 +11,14 @@ sys.path.append(str(PACKAGE_ROOT))
 
 ## Then perform import
 from prediction_model.config import config
-from prediction_model.processing.data_handling import load_dataset, save_pipeline, seperate_data, split_data
+from prediction_model.processing.data_handling import load_dataset, save_pipeline, separate_data, split_data
 import prediction_model.processing.preprocessing as pp
 import prediction_model.pipeline as pipe
 import sys 
 
 def perform_training():
     dataset = load_dataset(config.FILE_NAME)
-    X, y = seperate_data(dataset)
+    X, y = separate_data(dataset)
     y = y.apply(lambda x: 1 if x.strip() == 'Approved' else 0)
     X_train, X_test, y_train, y_test = split_data(X, y)
     test_data = X_test.copy()

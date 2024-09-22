@@ -17,8 +17,8 @@ def load_dataset(file_name):
     _data.columns = [c.strip() for c in _data.columns] # Fix Column names
     return _data[config.FEATURES]
 
-# Seperate X and y
-def seperate_data(data):
+# Separate X and y
+def separate_data(data):
     X = data.drop(config.TARGET, axis = 1)
     y = data[config.TARGET]
     return X, y
